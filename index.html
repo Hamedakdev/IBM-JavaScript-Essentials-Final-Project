@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">X-Travel</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home" aria-labelledby="hero-title">
+            <div class="content">
+                <h1 id="hero-title">Explore Your Next Destination</h1>
+                <p>
+                    Discover handpicked travel recommendations for beaches, mountains, cities, and cultural escapes.
+                    Start your journey with inspiration tailored to your travel style.
+                </p>
+                <a href="#about" class="btn">Start Exploring</a>
+            </div>
+        </section>
+
+        <section id="recommendations" class="section recommendations" aria-labelledby="recommendations-title">
+            <div class="content">
+                <h2 id="recommendations-title">Find Travel Recommendations</h2>
+                <div class="search-box">
+                    <label for="searchInput" class="sr-only">Enter country or destination</label>
+                    <input type="text" id="searchInput" name="destination" placeholder="Type a country or destination"
+                        aria-label="Country or destination" />
+                    <button id="searchBtn" type="button">Search</button>
+                    <button id="clearBtn" type="button">Clear</button>
+                </div>
+                <div id="results" class="results" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="content">
+                <h2>About Us</h2>
+                <p>
+                    X-Travel was created to make travel planning simple, inspiring, and personalized.
+                    Our website helps people discover destinations based on their interests, preferred pace,
+                    and dream experiences.
+                </p>
+                <p>
+                    Our mission is to guide every traveler toward places they will truly love—from vibrant cities
+                    to peaceful nature escapes—through practical and friendly recommendations.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <form class="contact-form" action="#" novalidate>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 X-Travel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
